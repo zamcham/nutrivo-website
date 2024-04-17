@@ -4,7 +4,7 @@ function Button(props) {
   return (
     <button
       type={type}
-      className={`text-white px-4 py-2 rounded-md bg-gradient-to-r from-${variant}-500 to-${variant}-700`}
+      className={`text-white px-4 py-2 rounded-md bg-gradient-to-r from-${variant}-400 to-lime-600`}
     >
       {title}
     </button>
