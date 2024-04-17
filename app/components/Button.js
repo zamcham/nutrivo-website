@@ -1,4 +1,6 @@
-function Button(type, title, variant) {
+function Button(props) {
+  const { type, title, variant } = props;
+  
   return (
     <button
      type={type}

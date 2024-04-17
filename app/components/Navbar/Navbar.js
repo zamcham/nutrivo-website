@@ -4,7 +4,7 @@ import Button from '../Button'
 
 function Navbar() {
   return (
-    <nav className="border-2 border-red-500 flex justify-between max-container padding-container relative z-30 py-5 px-5">
+    <nav className="flex justify-between items-center max-container bg-gray-700	max-h-16  relative z-30 py-3 px-5 mx-5 rounded-3xl text-white">
         <Link href="/">
             Nutrivo
         </Link>
