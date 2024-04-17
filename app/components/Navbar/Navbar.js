@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import navlinks from './constants/navlinks'
+import Button from '../Button'
 
 function Navbar() {
   return (
@@ -11,11 +12,17 @@ function Navbar() {
         <ul className='hidden h-full gap-12 lg:flex'>
             {navlinks.map((link) => (
                 <Link href={link.href} key={link.key} 
-                className='regular-16 text-black-50 flexCenter pb-1.5 transition-all hover:font-bold'>
+                className='text-black-50 flexCenter pb-1.5 transition-all hover:font-bold'>
                    {link.label}
                 </Link>
             ))}
         </ul>
+
+        <Button
+        type='button'
+        title='Sign Up'
+        variant='green-500' 
+        />
     </nav>
   )
 }
