@@ -3,8 +3,8 @@ function Button(props) {
   
   return (
     <button
-     type={type}
-      className={`bg-${variant} text-white px-4 py-2 rounded-md`}
+      type={type}
+      className={`text-white px-4 py-2 rounded-md bg-gradient-to-r from-${variant}-500 to-${variant}-700`}
     >
       {title}
     </button>

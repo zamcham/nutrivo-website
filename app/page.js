@@ -8,8 +8,14 @@ export default function Home() {
         <h1 className="text-4xl font-bold py-4">Easy calorie tracking app</h1>
         <p>No more manual tracking, Nutrivo AI powered tracking gets to learn your habits</p>
       </div>
-      <div className="w-full max-w-50 flex-1 py-4">
-        <Image src={mockUp} alt="Phone image" width={500} height={500} />
+      <div className="w-full max-w-50 flex-1 py-4 flex justify-center">
+        <Image
+          src={mockUp}
+          alt="Phone image"
+          width={500}
+          height={500}
+          className="rotate-[-28deg] mx-auto"
+        />
       </div>
     </main>
   );
