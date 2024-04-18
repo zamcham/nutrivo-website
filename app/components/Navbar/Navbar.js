@@ -4,7 +4,7 @@ import Button from '../Button'
 
 function Navbar() {
   return (
-    <nav className="fixed flex justify-between items-center max-h-16  
+    <nav className="fixed flex justify-between items-center max-h-16 drop-shadow-lg  
         z-30 py-3 px-5 rounded-full text-white bg-gradient-to-r from-gray-600 to-gray-950 
         m-auto w-full max-w-[1440px];">
         <Link href="/">

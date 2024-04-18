@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcaseMedical } from "@fortawesome/free-solid-svg-icons"
 
-function CaseStudies() {
+function UseCases() {
   return (
     <div className="my-5">
         <section className="flex justify-between h-[40vh] max-w-1440 mx-auto mx-16 overflow-hidden relative space-x-5">
@@ -20,4 +20,4 @@ function CaseStudies() {
   )
 }
 
-export default CaseStudies
+export default UseCases
