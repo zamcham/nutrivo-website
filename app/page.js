@@ -1,17 +1,47 @@
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import mockUp from './assets/b-mockup.png';
 import memoji1 from './assets/memojis/memoji-1.png';
 import memoji2 from './assets/memojis/memoji-2.png';
 import memoji3 from './assets/memojis/memoji-3.png';
+import androidBadge from './assets/badges/android.png';
+import iosBadge from './assets/badges/ios.png';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-row items-center justify-between p-24 max-w-1440 m-auto">
-      <div className="w-full max-w-50 flex-1">
-        <h1 className="text-4xl font-bold py-4">Easy calorie tracking app</h1>
-        <p>No more manual tracking, Nutrivo AI powered tracking gets to learn your habits</p>
+    <main className="flex h-screen p-24 max-w-1440 mx-auto pt-40 space-x-28 relative">
+      <div className="left-container w-2/4 h-full flex flex-col justify-between relative">
+        <h1 className="text-4xl font-bold">Automate your calorie tracking with AI</h1>
+        <p className='text-lg font-light tracking-wide'>Streamline your nutrition journey with personalized meal plans tailored to your goals and preferences. Say goodbye to manual tracking and decision fatigue - let our AI revolutionize your eating habits today!
+        </p>
+        <div className='flex flex-row items-center'>
+          <div className="bg-green-500 rounded-full p-5 w-6 h-6 flex items-center justify-center">
+            <FontAwesomeIcon icon={faPlay} className="text-white text-sm" />
+          </div>
+          <p className="text-lg font-medium px-3">See a neak peak</p>
+        </div>
+        <div>
+          <div className='bg-zinc-300 rounded-3xl h-[200px]'>
+            <p className='bg-white w-1/2 m-auto rounded-lg py-3 px-1 text-center'>Soon Available On</p>
+            <div className="flex flex-row items-center justify-center pt-10 space-x-4">
+              <Image 
+                src={androidBadge} 
+                width={200}
+                height={150}
+                alt="Android badge" 
+              />
+              <Image 
+                src={iosBadge} 
+                width={200}
+                height={150}
+                alt="iOS badge" 
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="w-full max-w-50 flex-1 py-4 flex flex-col justify-center relative">
+      <div className="left-container w-2/4 h-full flex flex-col justify-between relative">
         <div className="w-full mb-20 flex flex-row items-center justify-end">
           <div className='flex flex-row '>
             <Image 
@@ -36,9 +66,9 @@ export default function Home() {
               className="bg-gray-700 rounded-full border-4 border-[DFE3E4] -ml-5 z-0" 
             />
           </div>
-          <div className='flex flex-col justify-center px-5'>
-            <p className='font-medium text-2xl'>Testers</p>
-            <p className='text-xl'>needed</p>
+          <div className='flex flex-col justify-center px-5 text-center'>
+            <p className='font-semibold text-xl'>Join The</p>
+            <p className='text-xl'>Waiting List</p>
           </div>
         </div>
         <Image
@@ -48,7 +78,7 @@ export default function Home() {
           height={450}
           className="rotate-[-28deg] mx-auto z-10"
         />
-        <div className="absolute bottom-10 right-0 mx-auto my-auto w-4/5 h-1/2 bg-gradient-to-r from-green-400 to-lime-500 rounded-3xl z-0" />
+        <div className="absolute bottom-0 mx-auto my-auto w-full h-1/2 bg-gradient-to-r from-green-400 to-lime-500 rounded-3xl z-0" />
       </div>
     </main>
   );

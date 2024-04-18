@@ -4,9 +4,9 @@ import Button from '../Button'
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center max-h-16  
-        relative z-30 py-3 px-5 rounded-3xl text-white bg-gradient-to-r from-gray-600 to-gray-950 
-        m-auto mt-5 max-w-[1440px]">
+    <nav className="fixed flex justify-between items-center max-h-16  
+        z-30 py-3 px-5 rounded-full text-white bg-gradient-to-r from-gray-600 to-gray-950 
+        m-auto w-full max-w-[1440px];">
         <Link href="/">
             Nutrivo
         </Link>
