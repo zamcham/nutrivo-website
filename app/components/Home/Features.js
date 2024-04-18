@@ -4,8 +4,8 @@ import { faBowlFood } from '@fortawesome/free-solid-svg-icons';
 
 function Features() {
   return (
-    <div className="bg-slate-100">
-        <section className="flex h-[100vh] p-16 max-w-1440 mx-auto space-x-28 items-center relative">
+    <div className="bg-slate-100 w-full flex items-center justify-center">
+        <section className="flex h-[100vh] max-w-1440 p-20 space-x-28 items-center relative">
             <div className="space-y-7">
                 <h2>Unlock your nutrition potential</h2>
                 <p>Discover how our app's innovative features can revolutionize your approach to eating healthier</p>

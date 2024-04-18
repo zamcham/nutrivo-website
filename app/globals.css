@@ -35,6 +35,11 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 p, li {
   font-size: 1.2rem;
   font-weight: 300;
@@ -56,6 +61,51 @@ li strong {
   width: 15px;
   height: 15px;
   color: white;
+}
+
+.i-container-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.i-container-big svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.line-deco {
+  width: 204px;
+  height: 309px;
+  mask-image: url('./assets/decoration/line.svg');
+  -webkit-mask-image: url('./assets/decoration/line.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-spin {
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  background: conic-gradient(from 0deg at 50% 50%, rgb(22, 163, 74) 0%, rgb(132 204 22) 6%, transparent 12%);
+  width: 250%;
+  height: 200%;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 @layer utilities {
