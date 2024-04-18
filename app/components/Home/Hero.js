@@ -11,7 +11,7 @@ import iosBadge from '../../assets/badges/ios.png';
 function Hero() {
   return (
     <main className="bg-slate-200">
-      <section className='flex h-screen p-24 max-w-1440 mx-auto pt-40 space-x-28 relative'>
+      <section className='flex h-screen p-16 max-w-1440 mx-auto pt-40 space-x-28 relative'>
         <div className="left-container w-2/4 h-full flex flex-col justify-between relative">
         <h1 className="font-bold">Automate your calorie tracking with AI</h1>
         <p className='tracking-wide'>Streamline your nutrition journey with personalized meal plans tailored to your goals and preferences. Say goodbye to manual tracking and decision fatigue - let our AI revolutionize your eating habits today!
