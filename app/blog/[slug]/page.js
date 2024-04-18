@@ -18,6 +18,6 @@ export default function BlogPost({ params }) {
 export function generateStaticParams() {
   return posts.map((post) => ({
     slug: post.title.toLowerCase().replace(/\s+/g, '-'),
-    key: post.id.toString(),
+    key: post.slug,
   }));
 }

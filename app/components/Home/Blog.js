@@ -5,7 +5,7 @@ const { posts } = require('../../data/posts.js');
 function Blog() {
   return (
     <div className="bg-slate-100">
-        <section className="flex flex-col h-[50vh] max-w-1440 mx-auto px-24
+        <section className="flex flex-col h-[60vh] max-w-1440 mx-auto px-24
         bg-gradient-to-r from-gray-600 to-gray-950
         rounded-t-[50px] overflow-hidden relative">
             <div className='bg-slate-100 w-1/2 m-auto rounded-xl py-3 px-1 text-center -mt-1'>
