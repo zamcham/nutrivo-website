@@ -6,7 +6,7 @@ function Blog() {
   return (
     <div className="bg-slate-100 w-full flex items-center justify-center">
         <section 
-          className="flex flex-col items-center justify-center 
+          className="sm-s:overflow-hidden flex flex-col items-center justify-center 
           h-[60vh] w-full max-w-1440 mx-20 p-10
           bg-gradient-to-r from-gray-600 to-gray-950
           rounded-t-[50px] overflow-hidden relative"

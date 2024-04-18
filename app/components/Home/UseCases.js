@@ -4,7 +4,7 @@ import { faBriefcaseMedical } from "@fortawesome/free-solid-svg-icons"
 function UseCases() {
   return (
     <div className="my-5 w-full flex items-center justify-center">
-        <section className="flex justify-between h-[40vh] max-w-1440 mx-20 overflow-hidden relative space-x-5">
+        <section className="sm-s:overflow-hidden flex justify-between h-[40vh] max-w-1440 mx-20 overflow-hidden relative space-x-5">
             <div className='bg-slate-200 w-1/2 rounded-bl-[50px] p-7 space-y-3 flex flex-col justify-center'>
                 <figure className="i-container-big bg-gradient-to-r from-gray-600 to-gray-950">
                     <FontAwesomeIcon icon={faBriefcaseMedical} />

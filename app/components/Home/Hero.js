@@ -11,15 +11,15 @@ import iosBadge from '../../assets/badges/ios.png';
 function Hero() {
   return (
     <main className="bg-slate-200 w-full flex items-center justify-center">
-      <section className='flex h-screen md-s:h-[70vh] max-w-1440 p-20 md-s:p-10 
-      space-x-28 md-s:space-x-10 relative '>
-        <header className="left-container w-2/4 flex flex-col justify-between pt-28 md-s:pt-20 md-s:pb-16 relative">
-          <div className='space-y-8'>
+      <section className='sm-s:overflow-hidden flex sm-s:flex-col sm-s:flex-col-reverse h-screen md-s:h-[70vh] sm-s:h-full max-w-1440 sm-s:w-full p-20 md-s:p-10 sm-s:p-5
+      space-x-28 md-s:space-x-10 sm-s:space-x-0 relative '>
+        <header className="w-2/4 sm-s:w-full flex flex-col justify-between pt-20 md-s:pt-20 sm-s:pt-0 pb-20 md-s:pb-16 sm-s:pb-5 sm-s:space-y-8 relative">
+          <div className='space-y-8 sm-s:space-y-4'>
             <h1 className="font-bold leading-none">Automate your calorie tracking with AI</h1>
             <p className='tracking-wide'>Streamline your nutrition journey with personalized meal plans tailored to your goals and preferences. Say goodbye to manual tracking and decision fatigue - let our AI revolutionize your eating habits today!
             </p>
           </div>
-          <div className='flex flex-row items-center'>
+          <div className='flex items-center sm-s:justify-center'>
             <div className="i-container bg-gradient-to-r from-green-400 to-lime-500 rounded-full flex items-center justify-center">
               <FontAwesomeIcon icon={faPlay} />
             </div>
@@ -45,9 +45,11 @@ function Hero() {
           </div>
         </div>
         </header>
-        <div className="left-container w-2/4 flex flex-col justify-between pt-28 md-s:pt-20 md-s:pb-16 relative">
-          <div className="w-full mb-20 flex flex-row items-center justify-end md-s:justify-between">
-            <figure className='flex flex-row '>
+
+
+        <div className="w-2/4 sm-s:w-full flex flex-col justify-between pt-20 md-s:pt-20 pb-20 md-s:pb-16 sm-s:pb-5 relative">
+          <div className="w-full mb-20 sm-s:mb-10 flex flex-row items-center justify-end md-s:justify-between sm-s:hidden">
+            <figure className='flex flex-row'>
               <Image 
                 src={memoji1} 
                 width={80}
@@ -71,8 +73,8 @@ function Hero() {
               />
             </figure>
             <div className='flex flex-col justify-center px-5 md-s:px-0 text-center'>
-              <p className='font-semibold text-xl md-s:text-2xl'>Join The</p>
-              <p className='text-xl md-s:text-2xl'>Waiting List</p>
+              <p className='font-semibold text-xl md-s:text-2xl sm-s:text-lg'>Join The</p>
+              <p className='text-xl md-s:text-2xl sm-s:text-lg'>Waiting List</p>
             </div>
           </div>
           <Image
@@ -80,9 +82,9 @@ function Hero() {
             alt="Phone image"
             width={450}
             height={450}
-            className="rotate-[-28deg] mx-auto z-10"
+            className="rotate-[-28deg] sm-s:rotate-[0] mx-auto z-10 sm-s:w-[200px] sm-s:h-[200px] sm-s:mt-[-25px]"
           />
-          <div className="absolute bottom-16 mx-auto my-auto w-full h-1/3 bg-gradient-to-r from-green-400 to-lime-500 rounded-3xl z-0" />
+          <div className="absolute bottom-20 md-s:bottom-16 mx-auto my-auto w-full h-1/3 sm-s:h-1/2 bg-gradient-to-r from-green-400 to-lime-500 rounded-3xl z-0" />
         </div>
     </section>
   </main>
