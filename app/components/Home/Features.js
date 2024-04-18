@@ -19,7 +19,6 @@ function Features() {
                         <span className="text-[1.2rem] font-light">Food Items</span>
                     </div>
                 </div>
-
             </div>
             <div>
                 <ul>

@@ -13,10 +13,12 @@ function Navbar() {
 
         <ul className='hidden h-full gap-12 lg:flex'>
             {navlinks.map((link) => (
-                <Link href={link.href} key={link.key} 
-                className='text-black-50 flexCenter pb-1.5 transition-all hover:font-bold'>
-                   {link.label}
-                </Link>
+                <li key={link.label}>
+                    <Link href={link.href} 
+                    className='text-black-50 flexCenter pb-1.5 transition-all hover:font-bold'>
+                    {link.label}
+                    </Link>
+                </li>
             ))}
         </ul>
 
