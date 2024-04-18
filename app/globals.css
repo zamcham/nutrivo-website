@@ -81,30 +81,35 @@ li strong {
 .line-deco {
   width: 204px;
   height: 309px;
+  position: relative;
   mask-image: url('./assets/decoration/line.svg');
   -webkit-mask-image: url('./assets/decoration/line.svg');
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
 }
 
-.gradient-spin {
+.line-deco::before {
+  content: '';
   position: absolute;
-  top: -25%;
-  left: -25%;
-  background: conic-gradient(from 0deg at 50% 50%, rgb(22, 163, 74) 0%, rgb(132 204 22) 6%, transparent 12%);
-  width: 250%;
-  height: 200%;
+  top: -10%;
+  right: -90%;
+  width: 200%;
+  height: 150%;
+  background: conic-gradient(from 0deg at 50% 50%, transparent 0%, rgb(132, 204, 22) 6%, rgb(22, 163, 74) 12%, transparent 13%); 
   animation: rotate 3s linear infinite;
 }
 
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
+    right: -100%;
+  }
+  10% {
+    right: -90%;
   }
   100% {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
+    right: -100%;
   }
 }
 
