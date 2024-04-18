@@ -44,6 +44,20 @@ li strong {
   font-weight: 600;
 }
 
+.i-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.i-container svg {
+  width: 15px;
+  height: 15px;
+  color: white;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

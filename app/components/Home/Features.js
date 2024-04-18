@@ -1,3 +1,7 @@
+const {appFeatures} = require('../../data/features')
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBowlFood } from '@fortawesome/free-solid-svg-icons';
+
 function Features() {
   return (
     <div className="bg-slate-100">
@@ -19,11 +23,17 @@ function Features() {
             </div>
             <div>
                 <ul>
-                    <li><strong>Personalized Meal Plans:</strong> Tailored to your specific goals and preferences for effortless, enjoyable eating.</li>
-                    <li><strong>AI-Powered Recommendations:</strong> Our intelligent AI learns from your interactions to suggest the best food options for you.</li>
-                    <li><strong>Easy Ingredient Analysis:</strong> Scan grocery receipts or snap a photo of your fridge to discover recipes using ingredients you already have.</li>
-                    <li><strong>Reduce Food Waste:</strong> Utilize leftover ingredients effectively and minimize food wastage with our recipe suggestions.</li>
-                    <li><strong>Save Time and Money:</strong> Say goodbye to decision fatigue and costly meal planning mistakes – let our AI do the work for you.</li>
+                    {appFeatures.map((feature) => (
+                        <li key={feature.title} className="flex space-x-5">
+                            <div className="i-container bg-gradient-to-r from-gray-600 to-gray-950 flex-2 rounded-md">
+                                <FontAwesomeIcon icon={feature.icon} />
+                            </div>
+                            <div className='flex-1 space-y-1 mb-5'>
+                                <h3 className='font-semibold leading-none'>{feature.title}</h3>
+                                <p className='leading-5'>{feature.description}</p>
+                            </div>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </section>
