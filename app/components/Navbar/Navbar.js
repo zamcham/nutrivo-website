@@ -22,7 +22,7 @@ function Navbar() {
 
         <Button
             type='button'
-            title='Sign Up'
+            title='Join List'
             variant='green' 
         />
     </nav>
